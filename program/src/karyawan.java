@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Pelanggan extends Accesoris {
+public class karyawan extends Accesoris {
     Scanner in = new Scanner(System.in);
     Accesoris x = new Accesoris();
     float total1, total2, total3, total4, total5, total6, total7, total8, total9, total10, totalHarga;
