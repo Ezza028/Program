@@ -31,9 +31,13 @@ public class App {
                 for (String b = "y"; b.equals("Y") || b.equals("y");) {
                     System.out.print("Masukkan ID Karyawan : ");
                     id = input.nextInt();
+                    System.out.print("Masukkan nomor antrian pelanggan : ");
+                    int kodeTransaksi = input.nextInt();
                     Data karyawan = new karyawan(id);
                     System.out.println(id + " ID karyawan terdaftar");
-                    System.out.print("ADA TAMBAHAN? (Y/T): ");
+                    AmbilKodeTransaksi tr = new AmbilKodeTransaksi(kodeTransaksi);
+                    System.out.print("Kode Transaksi pelnggan : "+tr.kodeTransaksi);
+                    System.out.print("\nADA TAMBAHAN? (Y/T): ");
                     b = input.next();
                     System.out.println("------------------------------------------");
                 }
